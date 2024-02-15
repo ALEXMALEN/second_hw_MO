@@ -14,7 +14,7 @@ elif choice == "avg":
     result = (num1 + num2 + num3) / 3
     print("Average:", result)
 else:
-    print("Incorrect operator, try again with the next operator: 'max', 'min', 'avg'."
+    print("Incorrect operator, try again with the next operator: 'max', 'min', 'avg'.")
 ###
 meters = float(input("Enter meter quantity: "))
 
