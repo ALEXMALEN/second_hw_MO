@@ -51,4 +51,3 @@ if 1 <= day_number <= 7:
 else:
     print("Invalid day number. Enter a number from 1 to 7.")
 
-#
