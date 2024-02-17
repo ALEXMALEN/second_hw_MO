@@ -32,7 +32,7 @@
 # else:
 #     print("Incorrect operation selection. Please select 'miles', 'inches' or 'yards'.")
 #
-##
+# ###
 # day_number = int(input("Enter the day number (1-7): "))
 #
 # days = {
@@ -50,16 +50,38 @@
 #     print(f"Day name: {day_name}")
 # else:
 #     print("Invalid day number. Enter a number from 1 to 7.")
+#
+# num1 = float(input("Enter your first number: "))
+# num2 = float(input("Enter your second number: "))
+#
+# if num1 == num2:
+#     print("Numbers is equal!")
+# else:
+#     print("Numbers are not equal!""\nDisplaying numbers in ascending order... ")
+# if num1 < num2:
+#     print(f"{num1}, {num2}")
+# else:
+#     print(f"{num2}, {num1}")
+# ###
+num1 = int(input("Enter your first number: "))
+num2 = int(input("Enter you second number: "))
 
-num1 = float(input("Enter your first number: "))
-num2 = float(input("Enter your second number: "))
+math_calculation = input("Chose one of the following operation (+, -, *, /): ")
 
-if num1 == num2:
-    print("Numbers is equal!")
+if math_calculation == '+':
+    result = num1 + num2
+    print(f"Result of adding: {result}")
+elif math_calculation == '-':
+    result = num1 - num2
+    print(f"Result of subtracting: {result}")
+elif math_calculation == '*':
+    result = num1 * num2
+    print(f"Result of multiplying: {result}")
+elif math_calculation == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print(f"Result of dividing: {result}")
+    else:
+        print("Error!\n""You can't divide to 0 you dumbass") # It’s not an insult, it’s just because it’s fun
 else:
-    print("Numbers are not equal!""\nDisplaying numbers in ascending order... ")
-if num1 < num2:
-    print(f"{num1}, {num2}")
-else:
-    print(f"{num2}, {num1}")
-
+    print("Invalid mathematical operation. Enter one of the operations: +, -, *, /.")
