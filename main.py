@@ -32,7 +32,7 @@
 # else:
 #     print("Incorrect operation selection. Please select 'miles', 'inches' or 'yards'.")
 #
-############
+##
 # day_number = int(input("Enter the day number (1-7): "))
 #
 # days = {
@@ -50,3 +50,16 @@
 #     print(f"Day name: {day_name}")
 # else:
 #     print("Invalid day number. Enter a number from 1 to 7.")
+
+num1 = float(input("Enter your first number: "))
+num2 = float(input("Enter your second number: "))
+
+if num1 == num2:
+    print("Numbers is equal!")
+else:
+    print("Numbers are not equal!""\nDisplaying numbers in ascending order... ")
+if num1 < num2:
+    print(f"{num1}, {num2}")
+else:
+    print(f"{num2}, {num1}")
+
