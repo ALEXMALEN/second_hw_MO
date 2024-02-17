@@ -33,21 +33,33 @@
 #     print("Incorrect operation selection. Please select 'miles', 'inches' or 'yards'.")
 #
 ##
-day_number = int(input("Enter the day number (1-7): "))
+# day_number = int(input("Enter the day number (1-7): "))
+#
+# days = {
+#     1: "Monday",
+#     2: "Tuesday",
+#     3: "Wednesday",
+#     4: "Thursday",
+#     5: "Friday",
+#     6: "Saturday",
+#     7: "Sunday"
+# }
+#
+# if 1 <= day_number <= 7:
+#     day_name = days[day_number]
+#     print(f"Day name: {day_name}")
+# else:
+#     print("Invalid day number. Enter a number from 1 to 7.")
 
-days = {
-    1: "Monday",
-    2: "Tuesday",
-    3: "Wednesday",
-    4: "Thursday",
-    5: "Friday",
-    6: "Saturday",
-    7: "Sunday"
-}
+num1 = float(input("Enter your first number: "))
+num2 = float(input("Enter your second number: "))
 
-if 1 <= day_number <= 7:
-    day_name = days[day_number]
-    print(f"Day name: {day_name}")
+if num1 == num2:
+    print("Numbers is equal!")
 else:
-    print("Invalid day number. Enter a number from 1 to 7.")
+    print("Numbers are not equal!""\nDisplaying numbers in ascending order... ")
+if num1 < num2:
+    print(f"{num1}, {num2}")
+else:
+    print(f"{num2}, {num1}")
 
