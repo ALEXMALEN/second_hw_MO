@@ -32,7 +32,7 @@
 # else:
 #     print("Incorrect operation selection. Please select 'miles', 'inches' or 'yards'.")
 #
-# ###
+# ### New homework!
 # day_number = int(input("Enter the day number (1-7): "))
 #
 # days = {
@@ -50,7 +50,7 @@
 #     print(f"Day name: {day_name}")
 # else:
 #     print("Invalid day number. Enter a number from 1 to 7.")
-#
+# ###
 # num1 = float(input("Enter your first number: "))
 # num2 = float(input("Enter your second number: "))
 #
