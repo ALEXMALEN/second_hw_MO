@@ -103,7 +103,8 @@
 #
 # ### Homework 4, task-2
 #
-# input_string, search_char = input("Enter the biggest word you heard in English: "), input("Enter the character to find in the text: ")
+# input_string = input("Enter the biggest word you heard in English: ")
+# search_char = input("Enter the character to find in the text: ")
 #
 # count = 0
 #
