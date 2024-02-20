@@ -62,11 +62,11 @@
 #     print(f"{num1}, {num2}")
 # else:
 #     print(f"{num2}, {num1}")
-# ###
+###
 # num1 = int(input("Enter your first number: "))
 # num2 = int(input("Enter you second number: "))
 #
-# math_calculation = input("Chose one of the following operation (+, -, *, /): ")
+# math_calculation = input("Chose one of the following operation +    -     *      / ")
 #
 # if math_calculation == '+':
 #     result = num1 + num2
@@ -84,19 +84,31 @@
 #     else:
 #         print("Error!\n""You can't divide to 0 you dumbass") # It’s not an insult, it’s just because it’s fun
 # else:
-#     print("Invalid mathematical operation. Enter one of the operations: +, -, *, /.")
+#     print("Invalid mathematical operation. Enter one of the operations: + - * /")
 ### Homework 4, task-1
-
-input_string = input("Enter your text: ")
-
-count_digits = 0
-count_letters = 0
-
-for char in input_string:
-    if char.isalpha():
-        count_letters += 1
-    elif char.isnumeric():
-        count_digits += 1
-
-print(f"Count of letter in a string", count_digits)
-print(f"Count of number in a string", count_letters)
+#
+# input_string = input("Enter your text: ")
+#
+# count_digits = 0
+# count_letters = 0
+#
+# for char in input_string:
+#     if char.isalpha():
+#         count_letters += 1
+#     elif char.isnumeric():
+#         count_digits += 1
+#
+# print(f"Count of letter in a string", count_digits)
+# print(f"Count of number in a string", count_letters)
+#
+# ### Homework 4, task-2
+#
+# input_string, search_char = input("Enter the biggest word you heard in English: "), input("Enter the character to find in the text: ")
+#
+# count = 0
+#
+# for char in input_string:
+#     if char == search_char:
+#         count += 1
+#
+# print(f"The character {search_char} occurs in the {count} times.")
