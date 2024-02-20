@@ -63,25 +63,40 @@
 # else:
 #     print(f"{num2}, {num1}")
 # ###
-num1 = int(input("Enter your first number: "))
-num2 = int(input("Enter you second number: "))
+# num1 = int(input("Enter your first number: "))
+# num2 = int(input("Enter you second number: "))
+#
+# math_calculation = input("Chose one of the following operation (+, -, *, /): ")
+#
+# if math_calculation == '+':
+#     result = num1 + num2
+#     print(f"Result of adding: {result}")
+# elif math_calculation == '-':
+#     result = num1 - num2
+#     print(f"Result of subtracting: {result}")
+# elif math_calculation == '*':
+#     result = num1 * num2
+#     print(f"Result of multiplying: {result}")
+# elif math_calculation == '/':
+#     if num2 != 0:
+#         result = num1 / num2
+#         print(f"Result of dividing: {result}")
+#     else:
+#         print("Error!\n""You can't divide to 0 you dumbass") # It’s not an insult, it’s just because it’s fun
+# else:
+#     print("Invalid mathematical operation. Enter one of the operations: +, -, *, /.")
+### Homework 4, task-1
 
-math_calculation = input("Chose one of the following operation (+, -, *, /): ")
+input_string = input("Enter your text: ")
 
-if math_calculation == '+':
-    result = num1 + num2
-    print(f"Result of adding: {result}")
-elif math_calculation == '-':
-    result = num1 - num2
-    print(f"Result of subtracting: {result}")
-elif math_calculation == '*':
-    result = num1 * num2
-    print(f"Result of multiplying: {result}")
-elif math_calculation == '/':
-    if num2 != 0:
-        result = num1 / num2
-        print(f"Result of dividing: {result}")
-    else:
-        print("Error!\n""You can't divide to 0 you dumbass") # It’s not an insult, it’s just because it’s fun
-else:
-    print("Invalid mathematical operation. Enter one of the operations: +, -, *, /.")
+count_digits = 0
+count_letters = 0
+
+for char in input_string:
+    if char.isalpha():
+        count_letters += 1
+    elif char.isnumeric():
+        count_digits += 1
+
+print(f"Count of letter in a string", count_digits)
+print(f"Count of number in a string", count_letters)
