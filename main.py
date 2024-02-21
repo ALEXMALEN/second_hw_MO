@@ -85,31 +85,74 @@
 #         print("Error!\n""You can't divide to 0 you dumbass") # It’s not an insult, it’s just because it’s fun
 # else:
 #     print("Invalid mathematical operation. Enter one of the operations: + - * /")
-### Homework 4, task-1
+# ### Homework 4, task-1
 #
 # input_string = input("Enter your text: ")
 #
-# count_digits = 0
-# count_letters = 0
+# count_digits, count_letters = 0, 0
 #
-# for char in input_string:
-#     if char.isalpha():
-#         count_letters += 1
-#     elif char.isnumeric():
-#         count_digits += 1
+# try:
+#     for char in input_string:
+#         if char.isalpha():
+#             count_letters += 1
+#         elif char.isnumeric():
+#             count_digits += 1
+#         elif char.isspace():
+#             raise ValueError("Spaces are not allowed in the input.")
 #
-# print(f"Count of letter in a string", count_digits)
-# print(f"Count of number in a string", count_letters)
+#     print(f"Count of letters in a string:", count_letters)
+#     print(f"Count of digits in a string:", count_digits)
+#
+# except ValueError as ve:
+#     print(f"An error occurred: {ve}")
+#
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
+
 #
 # ### Homework 4, task-2
 #
-# input_string = input("Enter the biggest word you heard in English: ")
-# search_char = input("Enter the character to find in the text: ")
+# try:
+#     input_string = input("Enter the biggest word you heard in English: ")
+#     search_char = input("Enter the character to find in the text: ")
 #
-# count = 0
+#     if not input_string:
+#         raise ValueError("Input string cannot be empty.")
 #
-# for char in input_string:
-#     if char == search_char:
-#         count += 1
+#     if len(search_char) != 1:
+#         raise ValueError("Please enter only one character to search.")
 #
-# print(f"The character {search_char} occurs in the {count} times.")
+#     count = 0
+#
+#     for char in input_string:
+#         if char == search_char:
+#             count += 1
+#
+#     print(f"The character {search_char} occurs {count} times.")
+#
+# except ValueError as ve:
+#     print(f"An error occurred: {ve}")
+#
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
+#
+# ### Homework 4, task-3
+#
+# try:
+#     input_string = input("Enter a text: ")
+#
+#     search_word = input("Enter a character to replace: ")
+#
+#     if search_word not in input_string:
+#         raise ValueError(f"Word '{search_word}' is not founded.")
+#
+#     replace_word = input("Enter a word to replace: ")
+#
+#     modified_string = input_string.replace(search_word, replace_word)
+#     print("Modified text:", modified_string)
+#
+# except ValueError as ve:
+#     print(f"Error!: {ve}")
+#
+# except Exception as e:
+#     print(f"Unexpected error!: {e}")
