@@ -156,3 +156,25 @@
 #
 # except Exception as e:
 #     print(f"Unexpected error!: {e}")
+# ### Homework 4, task-4
+#
+# input_string = "ExampleString12345"
+# print(f"Here is your word: {input_string}")
+#
+# print(f"1. Third character:", input_string[2])
+#
+# print(f"2. Penultimate character:", input_string[-2])
+#
+# print(f"3. First five characters:", input_string[:5])
+#
+# print(f"4. All characters except last two:", input_string[:-2])
+#
+# print(f"5. Characters with even indices:", input_string[::2])
+#
+# print(f"6. Characters with odd indices:", input_string[1::2])
+#
+# print(f"7. Reverse the string:", input_string[::-1])
+#
+# print(f"8. Every second character in reverse order:", input_string[-1::-2])
+#
+# print(f"9. Length of the string:", len(input_string))
