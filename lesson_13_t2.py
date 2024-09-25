@@ -42,10 +42,6 @@ class Counter:
     def get_current(self):
         return self.current
 
-    def show_valid_range(self):
-        return f"Допустимі значення: від {self.min_value} до {self.max_value}"
-
-
 # Основний код з перевіркою введення
 try:
     min_value = 0
